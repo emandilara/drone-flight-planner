@@ -17,7 +17,7 @@ flightApp.controller('mapController', function($scope, $rootScope) {
 
         $scope.flightPlanCoordinates = flightPlanCoordinates;
 
-        var map = renderMap(container, $scope.flightPlanCoordinates, $scope.mapCenter);
+        var map = renderMap(container, $scope.mapCenter);
 
         google.maps.event.addListener(map, 'click', function(event) {
            $scope.$apply( function(){
@@ -70,7 +70,7 @@ flightApp.controller('mapController', function($scope, $rootScope) {
         if($scope.savedMapContainer){
 
             // Render the map centered at the first point, and the flight plan corresponding to the stored data
-            $scope.savedMap = renderMap($scope.savedMapContainer, savedFlightPlanCoordinates, $scope.savedFlightPlans[0].coordinates[0]);
+            $scope.savedMap = renderMap($scope.savedMapContainer, $scope.savedFlightPlans[0].coordinates[0]);
             makeLine($scope.savedMap, savedFlightPlanCoordinates);
         }
 

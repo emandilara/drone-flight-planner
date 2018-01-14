@@ -1,3 +1,4 @@
+// Render line to connect all markers in their order
 makeLine = function(map, flightPlanCoordinates){
     var flightPath = new google.maps.Polyline({
         path: flightPlanCoordinates,
@@ -9,7 +10,8 @@ makeLine = function(map, flightPlanCoordinates){
     flightPath.setMap(map);
 }
 
-renderMap = function(container, flightPlanCoordinates, center) {
+// Render map in certain container at certain center
+renderMap = function(container, center) {
     var map = new google.maps.Map(container, {
             zoom: 15,
             center: center,
@@ -24,6 +26,7 @@ renderMap = function(container, flightPlanCoordinates, center) {
     return map;
 }
 
+// Place markers on a certain location in the map
 placeMarker = function(map, location) {
     var marker = new google.maps.Marker({
             position: location,
