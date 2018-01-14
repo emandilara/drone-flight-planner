@@ -1,0 +1,16 @@
+<div ng-show="createViewFlag">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <create-plan></create-plan>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <plan-points></plan-points>
+        </div>
+    </div>
+</div>
+
+<div ng-hide="createViewFlag">
+    <display-plan></display-plan>
+</div>

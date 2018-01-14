@@ -1,0 +1,7 @@
+<div class="row" id="saved-plans">
+    <h3 class="section-header">My flight plans</h3>
+    <h5 ng-show="emptySavedPlansFlag"> {{ emptySavedPlansMessage }} </h5>
+    <ul ng-repeat="plan in savedFlightPlans">
+        <li title="Click here to display flight plan"><button class="btn btn-default" ng-click="displayPlan(plan.name)"> {{ plan.name }} </button></li>
+    </ul>
+</div>

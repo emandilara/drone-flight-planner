@@ -1,0 +1,32 @@
+h1, h2, h3, h4, h5 {
+    font-family: 'Sofia';
+    text-align:center;
+}
+
+#saved-plans ul{
+    list-style-type: none;
+}
+
+#map-container {
+    padding-left: 50px;
+    border-left: #eeeeee solid 0.1px;
+}
+
+#saved-plans {
+    padding-right: 20px;
+}
+
+#map, #savedMap {
+    height: 600px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+
+.section-header {
+    padding-bottom: 15px;
+}
+
+.planControls {
+    float:right
+}
