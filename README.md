@@ -8,13 +8,11 @@ The project was developed using the Google Maps API, AngularJS 1.4 and Bootstrap
 
 ## Dependencies
 
-By default, to run the project you don't need to install any dependencies. The application depends on external
-resources (JS libraries and CSS stylesheets) that have been downloaded in the `external_resources` directory.
-
-However, as an alternative option, you can also use `npm`:
-
 In the directory `static`, please run `npm install`. Then uncomment the corresponding resources (ones in `node_modules`)
 in the `index.html` and comment the ones to the external resources (ones in `external_resources` directory).
+
+As an alternative option, instead of installing the dependencies, you can use already the external resources
+(JS libraries and CSS stylesheets), that have been downloaded in the `external_resources` directory.
 
 ## Run
 
